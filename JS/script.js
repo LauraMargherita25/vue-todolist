@@ -9,7 +9,7 @@ const app = new Vue({
     el: "#root",
     data: {
         newTask: {
-            taskName: eleNewTaskText,
+            taskName: "",
             taskState: true,
         }, 
         arrTasks: [
