@@ -1,0 +1,65 @@
+/* general */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* box with all the content */
+.container{
+    width: 800px;
+
+    margin: 3rem auto;
+}
+
+/* section to add new task */
+.add_tsk{
+    padding: 1rem;
+    
+    text-align: center;
+}
+
+.add_tsk input{
+    width: 200px;
+    height: 2rem;
+    border-radius: 10px;
+}
+
+.add_tsk button{
+    width: 100px;
+    height: 2rem;
+    border-radius: 10px;
+}
+
+/* task list */
+.task_list{
+    padding: 2rem;
+    border-radius: 20px;
+
+    list-style: none;
+    
+    background-color: aliceblue;
+}
+
+.task_list .list_item{
+    padding: 1rem;
+    border-bottom: 1px solid gray;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task_list .list_item button{
+    border: none;
+    background-color: transparent;
+
+    width: 1rem;
+    height: 1rem;
+
+    margin: 1rem;
+}
