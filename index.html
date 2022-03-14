@@ -26,16 +26,8 @@
 
             <!-- task list -->
             <ul class="task_list">
-                <li class="list_item">
-                    <p>Fare i compiti</p>
-                    <button>X</button>
-                </li>
-                <li class="list_item">
-                    <p>Fare i compiti</p>
-                    <button>X</button>
-                </li>
-                <li class="list_item">
-                    <p>Fare i compiti</p>
+                <li v-for="element in arrTasks" class="list_item">
+                    <p>{{ element.taskName }}</p>
                     <button>X</button>
                 </li>
             </ul>
