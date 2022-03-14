@@ -52,6 +52,12 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    cursor: pointer;
+}
+
+.task_list .list_item:hover{
+    background-color: bisque;
 }
 
 .task_list .list_item button{

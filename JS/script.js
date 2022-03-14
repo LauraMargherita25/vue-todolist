@@ -21,5 +21,10 @@ const app = new Vue({
                 taskState: true,
             },
         ]
+    },
+    methods:{
+        removeTask(index) {
+            this.arrTasks.splice(index, 1);
+        }
     }
 })

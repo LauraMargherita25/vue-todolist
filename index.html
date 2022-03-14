@@ -19,16 +19,16 @@
 
             <!-- section to add new task -->
             <div class="add_tsk">
-                <input type="text">
+                <input v-model="newTask" type="text" placeholder="Add new task">
                 <button>Add tsak!</button>
             </div>
             <!-- /section to add new task -->
 
             <!-- task list -->
             <ul class="task_list">
-                <li v-for="element in arrTasks" class="list_item">
+                <li v-for="(element, index) in arrTasks" class="list_item">
                     <p>{{ element.taskName }}</p>
-                    <button>X</button>
+                    <button @click="removeTask(index)">X</button>
                 </li>
             </ul>
             <!-- /task list -->
