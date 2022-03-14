@@ -7,6 +7,10 @@ Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
 const app = new Vue({
     el: "#root",
     data: {
+        newTask: {
+            taskName: ,
+            taskState: true,
+        }, 
         arrTasks: [
             {
                 taskName: "Fare i compiti",
@@ -25,6 +29,9 @@ const app = new Vue({
     methods:{
         removeTask(index) {
             this.arrTasks.splice(index, 1);
+        },
+        addTask() {
+            this.arrTasks.push(this.newTask)
         }
     }
 })
