@@ -8,22 +8,22 @@ let eleNewTaskText = document.querySelector(".new_task").ariaValueMax;
 const app = new Vue({
     el: "#root",
     data: {
-        newTask: {
-            taskName: "",
-            taskState: true,
+        newTask:  {
+            taskName: " ",
+            taskState: false,
         }, 
         arrTasks: [
             {
                 taskName: "Fare i compiti",
-                taskState: true,
+                taskState: false,
             },
             {
                 taskName: "Fare la spesa",
-                taskState: true,
+                taskState: false,
             },
             {
                 taskName: "Preparare la torta",
-                taskState: true,
+                taskState: false,
             },
         ]
     },
