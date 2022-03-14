@@ -24,15 +24,31 @@ const app = new Vue({
                 taskName: "Preparare la torta",
                 taskState: false,
             },
-        ]
+            
+        ],
     },
     methods:{
         removeTask(index) {
             this.arrTasks.splice(index, 1);
         },
         addTask() {
-            this.arrTasks.push(this.newTask);
-            this.newTask = "";
+            if (this.newTask.taskName.trim() != "") {
+                
+                this.arrTasks.push({ ...this.newTask });
+                this.newTask.taskName = "";
+            }
+        },
+        taskDone() {
+            if (this.arrTasks.taskState == false) {
+                // this.arrTasks.taskState == true
+                console.log("sono falso")
+            } else {
+                // this.arrTasks.taskState == false
+                console.log("sono vero")
+            }
         }
     },
 })
+
+
+

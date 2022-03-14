@@ -73,3 +73,7 @@ html{
 
     cursor: pointer;
 }
+
+.task_done{
+    text-decoration: line-through;
+}
