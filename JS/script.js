@@ -18,7 +18,7 @@ const app = new Vue({
             },
             {
                 taskName: "Fare la spesa",
-                taskState: false,
+                taskState: true,
             },
             {
                 taskName: "Preparare la torta",
@@ -32,21 +32,16 @@ const app = new Vue({
             this.arrTasks.splice(index, 1);
         },
         addTask() {
-            if (this.newTask.taskName.trim() != "") {
-                
+            if (this.newTask.taskName != "") {
                 this.arrTasks.push({ ...this.newTask });
                 this.newTask.taskName = "";
             }
         },
-        taskDone() {
-            if (this.arrTasks.taskState == false) {
-                // this.arrTasks.taskState == true
-                console.log("sono falso")
-            } else {
-                // this.arrTasks.taskState == false
-                console.log("sono vero")
-            }
-        }
+        /* toggleDone(element) {
+
+            element.taskState =  !element.taskState
+            
+        } */
     },
 })
 
