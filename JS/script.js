@@ -39,7 +39,7 @@ const app = new Vue({
         },
         toggleDone(element) {
 
-            element.taskState =  !element.taskState
+            element.taskState = !element.taskState;
             
         }
     },
