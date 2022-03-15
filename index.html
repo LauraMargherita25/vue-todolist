@@ -26,7 +26,7 @@
 
             <!-- task list -->
             <ul class="task_list">
-                <li @click="" v-for="(element, index) in arrTasks" class="list_item">
+                <li @click="toggleDone(element)" v-for="(element, index) in arrTasks" class="list_item">
                     <p :class="task_done : arrTasks.taskState">{{ element.taskName }}</p>
                     <button @click="removeTask(index)">X</button>
                 </li>
